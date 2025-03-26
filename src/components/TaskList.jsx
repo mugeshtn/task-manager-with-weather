@@ -59,7 +59,7 @@ const TaskList = () => {
                                     <Box sx={{ display: "flex", justifyContent: "space-between" }} className="pt-4">
                                         {task.weather && Object.keys(task.weather).length > 0 ? (
                                             typeof task.weather === "string" ? (
-                                                <Typography sx={{ fontSize: "10px", color: "red" }}>{task.weather}</Typography>
+                                                <Typography sx={{ fontSize: "10px", color: "red", marginRight: "10px" }}>{task.weather}</Typography>
                                             ) : (
                                                 <div style={{ display: "flex", gap: 30, alignItems: "center" }}>
                                                     <Typography variant="body2">🌡{task.weather.temperature}°C</Typography>
