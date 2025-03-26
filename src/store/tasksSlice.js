@@ -12,13 +12,14 @@ export const addTask = createAsyncThunk(
         if (isOutdoor) {
             try {
                 const weather = await weatherDetails();
-                if (weather.temperature !== undefined || weather.condition !== undefined) {
+                if (weather?.temperature !== undefined || weather?.condition !== undefined) {
                     newTask.weather = weather;
                 }else{
                     newTask.weather = "weather data not available for current location"
                 }
             } catch (error) {
-                console.error(error)
+                console.error("Weather fetch failed:", error);
+                newTask.weather = "Weather data not available for current location";
             }
         }
 
