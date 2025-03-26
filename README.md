@@ -22,7 +22,7 @@ This is an To-Do application built with **React, Redux, and Material UI**, featu
 
 ---
 
-## 🏗 Technologies Used
+## Technologies Used
 - **Frontend**: React, Redux Toolkit, React Router, Material UI
 - **State Management**: Redux Toolkit with Thunk for async actions
 - **API**: WeatherAPI for real-time weather data
