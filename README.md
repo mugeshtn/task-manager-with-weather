@@ -3,6 +3,7 @@
 ## Project Overview
 This is an To-Do application built with **React, Redux, and Material UI**, featuring **task management, weather API integration, authentication, and persistent storage**.
 
+---
 ## Features
 
 ### Core Functionality
@@ -21,7 +22,20 @@ This is an To-Do application built with **React, Redux, and Material UI**, featu
 - **Fully responsive.**
 
 ---
+## Login Credentials
+- username: **user@gmail.com**
+- password: **user@123**
+---
 
+## Running Instructions
+```bash
+git clone https://github.com/your-username/todo-weather-app.git
+cd todo-weather-app
+npm install 
+npm run dev 
+```
+
+---
 ## Technologies Used
 - **Frontend**: React, Redux Toolkit, React Router, Material UI
 - **State Management**: Redux Toolkit with Thunk for async actions
