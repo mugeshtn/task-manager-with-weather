@@ -18,7 +18,7 @@ export const addTask = createAsyncThunk(
                     newTask.weather = "weather data not available for current location"
                 }
             } catch (error) {
-                console.error("Failed to fetch weather details:", error);
+                newTask.weather = error
             }
         }
 
