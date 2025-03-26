@@ -18,6 +18,11 @@ const TaskInput = () => {
   const [task, setTask] = useState("");
   const [priority, setPriority] = useState("Medium");
   const dispatch = useDispatch();
+  function handleKeyDown(e){
+    if(e.key === "Enter"){
+      handleAddTask()
+    }
+  }
   const handleAddTask = () => {
     if (!task.trim()) return;
 
@@ -38,6 +43,7 @@ const TaskInput = () => {
             fullWidth
             value={task}
             onChange={(e) => setTask(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
 
           <FormControl fullWidth>
